@@ -4,5 +4,5 @@ if __ name__ == "__main__":
     r = 0
     for arg in sys.argv:
         if arg != sys.argv[0]:
-            result += int'arg)
+            result += int(arg)
         print(result)
