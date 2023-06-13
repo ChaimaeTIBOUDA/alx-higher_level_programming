@@ -1,12 +1,12 @@
 #include "lists.h"
-listint_t *reverse_listint(listint_t **head);
+void *reverse_listint(listint_t **head);
 int is_palindrome(listint_t **head);
 /**
  * reverse_listint - reverse a linked list
  * @head: first node
  * Return: head of reversed list
  */
-listint_t *reverse_listint(listint_t **head)
+void *reverse_listint(listint_t **head)
 {
 	listint_t *node = *head;
 	listint_t *next = NULL;
@@ -20,7 +20,6 @@ listint_t *reverse_listint(listint_t **head)
 		node = next;
 	}
 	*head = prev;
-	return (*head);
 }
 /**
  * is_palindrome - list is palindrome or not
